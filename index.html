@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Atelier is an independent art gallery showcasing original paintings, photography, sand art, handcrafted art and bespoke framing by emerging and established artists.">
+  <meta name="theme-color" content="#f7f5ef">
+  <title>ATELIER — Art for the Art of Living</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=DM+Sans:wght@400;500;600;700&family=Italiana&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="Atelier home">
+      <svg class="brand-mark" viewBox="0 0 52 52" role="img" aria-label="Atelier abstract frame and brush logo">
+        <rect x="3" y="3" width="46" height="46" rx="23" fill="none" stroke="currentColor" stroke-width="1.4"/>
+        <path d="M14 35 25.5 13 38 35M18.5 27h14" fill="none" stroke="#bd9a4b" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M33 13c4 3 5 7 3 11" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/>
+      </svg>
+      <span class="brand-type">ATELIER<small>ART · GALLERY · STUDIO</small></span>
+    </a>
+
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" aria-label="Open navigation">
+      <span></span><span></span>
+    </button>
+    <nav class="primary-nav" id="primary-nav" aria-label="Main navigation">
+      <a href="#gallery">Gallery</a>
+      <a href="#craft">Art Forms</a>
+      <a href="#framing">Framing</a>
+      <a href="#artists">For Artists</a>
+      <a href="#about">About Us</a>
+      <a class="nav-contact" href="#contact">Let's talk <span>↗</span></a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <!-- HERO / BRAND BANNER -->
+    <section class="hero" id="home" aria-labelledby="hero-title">
+      <div class="hero-photo hero-photo-main" role="img" aria-label="Warm abstract painting in a sunlit art studio"></div>
+      <div class="hero-photo hero-photo-detail" role="img" aria-label="Close-up of a textured handmade artwork"></div>
+      <div class="hero-grain"></div>
+      <div class="hero-content">
+        <p class="eyebrow light">An independent art gallery</p>
+        <h1 id="hero-title">Where art<br>finds <em>home.</em></h1>
+        <p class="hero-copy">Original paintings, photography, sand art, handcrafted creations and custom frames — curated for spaces that deserve meaning.</p>
+        <div class="hero-actions">
+          <a class="button button-gold" href="#gallery">Explore the collection <span>↗</span></a>
+          <a class="text-link light-link" href="#about">Meet the founders <span>↓</span></a>
+        </div>
+      </div>
+      <div class="hero-stamp" aria-hidden="true"><span>ART IS</span><strong>PERSONAL</strong><span>ALWAYS.</span></div>
+      <div class="hero-bottom"><span>CURATED WITH CURIOSITY</span><span>01 — 06 / THE ATELIER COLLECTION</span></div>
+    </section>
+
+    <!-- INTRO -->
+    <section class="intro section-shell">
+      <p class="eyebrow">A place for creative expression</p>
+      <div class="intro-grid">
+        <h2>Not just art on a wall.<br><em>A feeling in a room.</em></h2>
+        <div>
+          <p>Atelier brings artists, collectors and curious minds together. We showcase original works spanning oil paintings, watercolours, photography, sand art, textile crafts, ceramics and more — each piece carrying the spirit and story of its maker.</p>
+          <a class="text-link" href="#craft">Discover every art form <span>↗</span></a>
+        </div>
+      </div>
+      <div class="intro-meta"><span>01 / OUR POINT OF VIEW</span><span>THOUGHTFUL ART. HUMAN STORIES.</span></div>
+    </section>
+
+    <!-- STATS RIBBON -->
+    <section class="stats-ribbon" aria-label="Gallery statistics">
+      <div class="section-shell stats-grid">
+        <div class="stat-item">
+          <span class="stat-number" data-count="6">6</span>
+          <span class="stat-label">Art Forms</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-number" data-count="50">50+</span>
+          <span class="stat-label">Featured Works</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-number" data-count="4">4</span>
+          <span class="stat-label">Co-Founders</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-number" data-count="100">∞</span>
+          <span class="stat-label">Passion for Art</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- GALLERY -->
+    <section class="gallery-section section-shell" id="gallery" aria-labelledby="gallery-title">
+      <div class="section-heading">
+        <div><p class="eyebrow">The exhibition wall</p><h2 id="gallery-title">A world of <em>makers.</em></h2></div>
+        <p class="section-note">Original ideas, different materials,<br>one place to discover them.</p>
+      </div>
+
+      <!-- Category filtering -->
+      <div class="gallery-filter">
+        <input type="radio" name="art-filter" id="filter-all" checked>
+        <input type="radio" name="art-filter" id="filter-painting">
+        <input type="radio" name="art-filter" id="filter-photo">
+        <input type="radio" name="art-filter" id="filter-handmade">
+        <input type="radio" name="art-filter" id="filter-sand">
+        <div class="filter-labels" role="group" aria-label="Filter artworks">
+          <label for="filter-all">All works <span>12</span></label>
+          <label for="filter-painting">Paintings <span>04</span></label>
+          <label for="filter-photo">Photography <span>03</span></label>
+          <label for="filter-handmade">Handmade <span>03</span></label>
+          <label for="filter-sand">Sand Art <span>02</span></label>
+        </div>
+
+        <div class="art-grid">
+          <!-- PAINTINGS -->
+          <article class="art-card tall painting">
+            <a class="art-link" href="#contact" aria-label="Enquire about Ochre Reverie">
+              <img src="https://images.unsplash.com/photo-1579783902614-a3fb3927b6a5?auto=format&fit=crop&w=1000&q=85" alt="Expressive oil painting in a warm palette" loading="lazy">
+              <span class="art-caption"><small>OIL ON CANVAS · PAINTING</small><strong>Ochre Reverie</strong><i>↗</i></span>
+            </a>
+          </article>
+          <article class="art-card wide photography">
+            <a class="art-link" href="#contact" aria-label="Enquire about Still Architecture">
+              <img src="https://images.unsplash.com/photo-1518005020951-eccb494ad742?auto=format&fit=crop&w=1300&q=85" alt="Fine art architectural photograph with geometric lines" loading="lazy">
+              <span class="art-caption"><small>ARCHITECTURE · PHOTOGRAPHY</small><strong>Still Architecture</strong><i>↗</i></span>
+            </a>
+          </article>
+          <article class="art-card square handmade">
+            <a class="art-link" href="#contact" aria-label="Enquire about Earth and Form">
+              <img src="https://images.unsplash.com/photo-1578749556568-bc2c40e68b61?auto=format&fit=crop&w=900&q=85" alt="Handmade ceramic vessel with a tactile finish" loading="lazy">
+              <span class="art-caption"><small>HANDMADE · CERAMIC</small><strong>Earth & Form</strong><i>↗</i></span>
+            </a>
+          </article>
+          <article class="art-card tall painting">
+            <a class="art-link" href="#contact" aria-label="Enquire about Blue Hour">
+              <img src="https://images.unsplash.com/photo-1541961017774-22349e4a1262?auto=format&fit=crop&w=900&q=85" alt="Contemporary abstract canvas painting with layered brushwork" loading="lazy">
+              <span class="art-caption"><small>ACRYLIC ON CANVAS · PAINTING</small><strong>Blue Hour</strong><i>↗</i></span>
+            </a>
+          </article>
+
+          <!-- SAND ART -->
+          <article class="art-card wide sand">
+            <a class="art-link" href="#contact" aria-label="Enquire about Dunes of Time">
+              <img src="https://images.unsplash.com/photo-1509316785289-025f5b846b35?auto=format&fit=crop&w=1300&q=85" alt="Intricate sand art patterns on a sandy surface" loading="lazy">
+              <span class="art-caption"><small>SAND SCULPTURE · SAND ART</small><strong>Dunes of Time</strong><i>↗</i></span>
+            </a>
+          </article>
+
+          <article class="art-card square handmade">
+            <a class="art-link" href="#contact" aria-label="Enquire about Woven Notes">
+              <img src="https://images.unsplash.com/photo-1600166898405-da9535204843?auto=format&fit=crop&w=900&q=85" alt="Handcrafted woven textile with natural fibers" loading="lazy">
+              <span class="art-caption"><small>TEXTILE · HANDCRAFT</small><strong>Woven Notes</strong><i>↗</i></span>
+            </a>
+          </article>
+
+          <!-- PAINTINGS -->
+          <article class="art-card square painting">
+            <a class="art-link" href="#contact" aria-label="Enquire about A Quiet Landscape">
+              <img src="https://images.unsplash.com/photo-1578301978693-85fa9c0320b9?auto=format&fit=crop&w=1300&q=85" alt="Large abstract painting in blue, cream and earthy tones" loading="lazy">
+              <span class="art-caption"><small>CANVAS · MIXED PAINT</small><strong>A Quiet Landscape</strong><i>↗</i></span>
+            </a>
+          </article>
+
+          <!-- PHOTOGRAPHY -->
+          <article class="art-card square photography">
+            <a class="art-link" href="#contact" aria-label="Enquire about Lines and Light">
+              <img src="https://images.unsplash.com/photo-1511818966892-d7d671e672a2?auto=format&fit=crop&w=900&q=85" alt="Minimalist black and white architectural photograph" loading="lazy">
+              <span class="art-caption"><small>FINE ART · PHOTOGRAPHY</small><strong>Lines & Light</strong><i>↗</i></span>
+            </a>
+          </article>
+
+          <!-- HANDMADE -->
+          <article class="art-card tall handmade">
+            <a class="art-link" href="#contact" aria-label="Enquire about Paper Garden">
+              <img src="https://images.unsplash.com/photo-1513519245088-0e12902e5a38?auto=format&fit=crop&w=900&q=85" alt="Handmade paper and botanical craft composition" loading="lazy">
+              <span class="art-caption"><small>PAPER ART · HANDCRAFT</small><strong>Paper Garden</strong><i>↗</i></span>
+            </a>
+          </article>
+
+          <!-- SAND ART -->
+          <article class="art-card square sand">
+            <a class="art-link" href="#contact" aria-label="Enquire about Coastal Canvas">
+              <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=900&q=85" alt="Artistic sand patterns along a coastline" loading="lazy">
+              <span class="art-caption"><small>BEACH · SAND ART</small><strong>Coastal Canvas</strong><i>↗</i></span>
+            </a>
+          </article>
+
+          <!-- PHOTOGRAPHY -->
+          <article class="art-card wide photography">
+            <a class="art-link" href="#contact" aria-label="Enquire about Golden Hour">
+              <img src="https://images.unsplash.com/photo-1500051638674-ff996a0ec29e?auto=format&fit=crop&w=1300&q=85" alt="Stunning landscape photograph during golden hour" loading="lazy">
+              <span class="art-caption"><small>LANDSCAPE · PHOTOGRAPHY</small><strong>Golden Hour</strong><i>↗</i></span>
+            </a>
+          </article>
+
+          <!-- PAINTING -->
+          <article class="art-card square painting">
+            <a class="art-link" href="#contact" aria-label="Enquire about Crimson Layers">
+              <img src="https://images.unsplash.com/photo-1547891654-e66ed7ebb968?auto=format&fit=crop&w=900&q=85" alt="Abstract painting with deep red and textured layers" loading="lazy">
+              <span class="art-caption"><small>ABSTRACT · PAINTING</small><strong>Crimson Layers</strong><i>↗</i></span>
+            </a>
+          </article>
+        </div>
+      </div>
+      <p class="gallery-note">Images courtesy of <a href="https://unsplash.com" target="_blank" rel="noopener">Unsplash</a> (open-source). Artist-submitted work will be individually credited before launch.</p>
+    </section>
+
+    <!-- ART FORMS / EDUCATIONAL CONTENT -->
+    <section class="craft-section" id="craft" aria-labelledby="craft-title">
+      <div class="section-shell">
+        <div class="section-heading">
+          <div><p class="eyebrow">Explore by medium</p><h2 id="craft-title">Every material<br>has a <em>story.</em></h2></div>
+          <p class="section-note">From traditional techniques to<br>the unexpected and experimental.</p>
+        </div>
+        <div class="craft-grid">
+          <article class="craft-card craft-feature">
+            <div class="craft-number">01</div><div class="craft-image oil-image" role="img" aria-label="Oil paint and artist palette"></div>
+            <div class="craft-copy"><p class="eyebrow">Rich · layered · timeless</p><h3>Oil & Acrylic Paintings</h3><p>Slow-building layers, luminous colour and expressive brushwork. Oil and acrylic painting offers depth and texture that rewards a closer look — from grand abstracts to intimate portraits.</p><a href="#gallery" class="text-link">Explore paintings <span>↗</span></a></div>
+          </article>
+          <article class="craft-card">
+            <div class="craft-number">02</div><div class="craft-image photo-image" role="img" aria-label="Fine art photography in a gallery"></div>
+            <div class="craft-copy"><p class="eyebrow">Observed · composed · evocative</p><h3>Photography</h3><p>Fine-art photographs turn fleeting light, places and everyday details into images worth living with. From architecture to landscapes, each frame captures a decisive moment.</p><a href="#gallery" class="text-link">View photography <span>↗</span></a></div>
+          </article>
+          <article class="craft-card">
+            <div class="craft-number">03</div><div class="craft-image handmade-image" role="img" aria-label="Handcrafted ceramic objects"></div>
+            <div class="craft-copy"><p class="eyebrow">Human · tactile · unique</p><h3>Handmade & Craft</h3><p>Textiles, ceramics, paper art, woodwork and mixed-media objects — each carries the marks and personality of its maker. Every piece is one of a kind.</p><a href="#gallery" class="text-link">Meet handmade art <span>↗</span></a></div>
+          </article>
+          <article class="craft-card">
+            <div class="craft-number">04</div><div class="craft-image sand-image" role="img" aria-label="Sand art sculpture on a beach"></div>
+            <div class="craft-copy"><p class="eyebrow">Ephemeral · intricate · elemental</p><h3>Sand Art</h3><p>From elaborate beach sculptures to bottled sand art, this ancient medium turns grains into breathtaking compositions. Impermanence is part of the beauty.</p><a href="#gallery" class="text-link">Discover sand art <span>↗</span></a></div>
+          </article>
+          <article class="craft-card">
+            <div class="craft-number">05</div><div class="craft-image canvas-image" role="img" aria-label="Abstract canvas artwork"></div>
+            <div class="craft-copy"><p class="eyebrow">Bold · tactile · versatile</p><h3>Canvas Art</h3><p>From acrylic abstracts to minimal compositions, canvas brings an expressive surface and a sense of presence to a space. Bold colours meet thoughtful strokes.</p><a href="#gallery" class="text-link">Discover canvas <span>↗</span></a></div>
+          </article>
+          <article class="craft-card">
+            <div class="craft-number">06</div><div class="craft-image mixed-image" role="img" aria-label="Mixed media collage artwork"></div>
+            <div class="craft-copy"><p class="eyebrow">Experimental · layered · eclectic</p><h3>Mixed Media & Other</h3><p>Collage, assemblage, digital-physical hybrids and unconventional materials. When artists break rules, the most surprising art emerges.</p><a href="#gallery" class="text-link">Explore mixed media <span>↗</span></a></div>
+          </article>
+        </div>
+        <p class="source-note">Art-medium descriptions are original editorial summaries informed by public museum collection and learning resources, including the <a href="https://www.getty.edu/projects/open-content-program/" target="_blank" rel="noopener">Getty Open Content Program</a> and <a href="https://www.metmuseum.org/hubs/open-access" target="_blank" rel="noopener">The Met Open Access</a>.</p>
+      </div>
+    </section>
+
+    <!-- FRAMING STUDIO -->
+    <section class="framing-section" id="framing" aria-labelledby="framing-title">
+      <div class="section-shell">
+        <div class="section-heading">
+          <div><p class="eyebrow">The framing studio</p><h2>Give your art<br>its <em>own place.</em></h2></div>
+          <p class="section-note">Choose a finish. Find your balance.<br>Make the work feel at home.</p>
+        </div>
+        <div class="framing-layout">
+          <div class="frame-stage-wrap">
+            <div class="stage-topline"><span>LIVE FRAME PREVIEW</span><span>ATELIER / 01</span></div>
+            <div class="frame-stage">
+              <div class="mat-board mat-none" id="mat-board">
+                <div class="artwork-frame frame-oak" id="artwork-frame">
+                  <img src="https://images.unsplash.com/photo-1541961017774-22349e4a1262?auto=format&fit=crop&w=900&q=85" alt="Abstract artwork displayed in a customizable frame">
+                </div>
+              </div>
+            </div>
+            <p class="stage-caption">A frame is the final brushstroke.</p>
+          </div>
+          <div class="customizer">
+            <p class="eyebrow">Your composition</p>
+            <p class="customizer-copy">Try different finishes and mat widths. Your preview updates as you choose.</p>
+            <fieldset class="choice-group">
+              <legend><span>01</span> Frame finish</legend>
+              <div class="swatch-options">
+                <button type="button" class="swatch-option is-selected" data-frame="oak" aria-pressed="true"><i class="swatch swatch-oak"></i>Natural Oak</button>
+                <button type="button" class="swatch-option" data-frame="gold" aria-pressed="false"><i class="swatch swatch-gold"></i>Gilded Gold</button>
+                <button type="button" class="swatch-option" data-frame="black" aria-pressed="false"><i class="swatch swatch-black"></i>Matte Black</button>
+                <button type="button" class="swatch-option" data-frame="white" aria-pressed="false"><i class="swatch swatch-white"></i>Minimalist White</button>
+              </div>
+            </fieldset>
+            <fieldset class="choice-group">
+              <legend><span>02</span> Mat board width</legend>
+              <div class="width-options">
+                <button type="button" class="width-option is-selected" data-mat="none" aria-pressed="true">None</button>
+                <button type="button" class="width-option" data-mat="slim" aria-pressed="false">Slim</button>
+                <button type="button" class="width-option" data-mat="wide" aria-pressed="false">Wide</button>
+              </div>
+            </fieldset>
+            <div class="selection-summary"><div><small>YOUR SELECTION</small><strong id="selection-summary">Natural Oak · No Mat</strong></div><span>✳</span></div>
+            <a class="button button-dark" href="#contact">Ask about custom framing <span>↗</span></a>
+            <p class="customizer-note">Preview is illustrative. Final materials and dimensions are confirmed with the studio.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SELLER / ARTIST PROFILE -->
+    <section class="artist-section section-shell" id="artists" aria-labelledby="artists-title">
+      <div class="artist-intro">
+        <p class="eyebrow">For artists, makers & independent studios</p>
+        <h2 id="artists-title">Your work deserves<br><em>to be discovered.</em></h2>
+        <p>Atelier is being shaped as a home for independent creative voices. Set up a maker profile, introduce your practice and tell collectors what makes your work yours.</p>
+        <ul class="artist-benefits">
+          <li><span>01</span> Build your artist identity</li>
+          <li><span>02</span> Showcase works across any medium</li>
+          <li><span>03</span> Connect with interested art lovers</li>
+          <li><span>04</span> Get featured in our curated exhibitions</li>
+        </ul>
+        <p class="seller-disclaimer">Seller profiles are currently a project demo. Publishing, payments, commissions and order management will be enabled after the marketplace is built.</p>
+      </div>
+      <div class="seller-panel">
+        <div class="seller-panel-head"><span>ATELIER / MAKER PROFILE</span><span class="profile-status">PREVIEW MODE</span></div>
+        <div class="seller-profile-preview">
+          <div class="profile-avatar" id="profile-avatar">A</div>
+          <div><small>YOUR CREATIVE SPACE</small><h3 id="profile-name">Your Artist Name</h3><p id="profile-medium">Your medium · Your story</p></div>
+        </div>
+        <form id="seller-form" class="seller-form">
+          <label for="seller-name">Artist / studio name <span>*</span>
+            <input id="seller-name" name="sellerName" type="text" placeholder="e.g. Studio Aanya" required minlength="2">
+          </label>
+          <label for="seller-email">Contact email <span>*</span>
+            <input id="seller-email" name="sellerEmail" type="email" placeholder="artist@example.com" required>
+          </label>
+          <label for="seller-medium">Primary art form <span>*</span>
+            <select id="seller-medium" name="sellerMedium" required>
+              <option value="" selected disabled>Choose your medium</option>
+              <option>Oil & acrylic painting</option><option>Canvas art</option><option>Photography</option>
+              <option>Sand art</option><option>Textile & embroidery</option><option>Ceramics & sculpture</option>
+              <option>Paper & mixed media</option><option>Other handmade art</option>
+            </select>
+          </label>
+          <label for="seller-portfolio">Portfolio / social link <span>*</span>
+            <input id="seller-portfolio" name="sellerPortfolio" type="url" placeholder="https://yourportfolio.com" required>
+          </label>
+          <button class="button button-dark" type="submit">Preview my profile <span>↗</span></button>
+          <p class="seller-feedback" id="seller-feedback" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+
+    <!-- ABOUT / FOUNDERS -->
+    <section class="about-section" id="about" aria-labelledby="about-title">
+      <div class="section-shell">
+        <div class="about-intro">
+          <p class="eyebrow light">The people behind the art</p>
+          <h2 id="about-title">Four minds.<br><em>One canvas.</em></h2>
+          <p class="about-description">Atelier was born from a shared belief that art should be accessible, personal and alive. Four co-founders, each with a unique perspective, came together to build a space where artists and art lovers connect without barriers.</p>
+        </div>
+
+        <div class="founders-grid">
+          <div class="founder-card">
+            <div class="founder-avatar">
+              <span>ST</span>
+            </div>
+            <div class="founder-info">
+              <span class="founder-number">01</span>
+              <h3>Siddharth Thakur</h3>
+              <p class="founder-role">Co-Founder · Vision & Strategy</p>
+              <a href="mailto:thakursiddharth@atlier.co.in" class="founder-email">thakursiddharth@atlier.co.in</a>
+            </div>
+          </div>
+          <div class="founder-card">
+            <div class="founder-avatar">
+              <span>JM</span>
+            </div>
+            <div class="founder-info">
+              <span class="founder-number">02</span>
+              <h3>Jyoti Maurya</h3>
+              <p class="founder-role">Co-Founder · Curation & Design</p>
+              <a href="mailto:jyotimaurya@atlier.co.in" class="founder-email">jyotimaurya@atlier.co.in</a>
+            </div>
+          </div>
+          <div class="founder-card">
+            <div class="founder-avatar">
+              <span>HJ</span>
+            </div>
+            <div class="founder-info">
+              <span class="founder-number">03</span>
+              <h3>Himanshu Jaiswal</h3>
+              <p class="founder-role">Co-Founder · Technology & Platform</p>
+              <a href="mailto:himanshujaiswal@atlier.co.in" class="founder-email">himanshujaiswal@atlier.co.in</a>
+            </div>
+          </div>
+          <div class="founder-card">
+            <div class="founder-avatar">
+              <span>SM</span>
+            </div>
+            <div class="founder-info">
+              <span class="founder-number">04</span>
+              <h3>Suroopika Manikandan</h3>
+              <p class="founder-role">Co-Founder · Community & Outreach</p>
+              <a href="mailto:suroopikamanikandan@atlier.co.in" class="founder-email">suroopikamanikandan@atlier.co.in</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="contact-section" id="contact">
+      <div class="section-shell contact-layout">
+        <div class="contact-copy">
+          <p class="eyebrow light">The studio door</p>
+          <h2>Let's make<br><em>something matter.</em></h2>
+          <p>Have a question, a framing idea, or a piece you'd like to share? Leave us a note and start a conversation.</p>
+          <a href="mailto:thakursiddharth@atlier.co.in" class="contact-email">THAKURSIDDHARTH@ATLIER.CO.IN ↗</a>
+        </div>
+        <form class="contact-form" id="contact-form">
+          <div class="form-row">
+            <label for="contact-name">Your name <span>*</span><input id="contact-name" name="name" type="text" placeholder="Your name" required minlength="2" autocomplete="name"></label>
+            <label for="contact-email">Email address <span>*</span><input id="contact-email" name="email" type="email" placeholder="you@example.com" required autocomplete="email"></label>
+          </div>
+          <label for="contact-interest">What brings you here? <span>*</span>
+            <select id="contact-interest" name="interest" required>
+              <option value="" disabled selected>Select an enquiry</option><option>Discover / purchase artwork</option><option>Custom framing</option><option>Artist / seller profile</option><option>Collaboration</option><option>Something else</option>
+            </select>
+          </label>
+          <label for="contact-message">Your message <span>*</span><textarea id="contact-message" name="message" rows="4" placeholder="Tell us a little about it..." required minlength="10"></textarea></label>
+          <div class="form-submit-row"><button class="button button-gold" type="submit">Send an enquiry <span>↗</span></button><small>* Required fields</small></div>
+          <p class="form-feedback" id="contact-feedback" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="footer-top">
+      <a class="brand footer-brand" href="#home">
+        <svg class="brand-mark" viewBox="0 0 52 52" aria-hidden="true"><rect x="3" y="3" width="46" height="46" rx="23" fill="none" stroke="currentColor" stroke-width="1.4"/><path d="M14 35 25.5 13 38 35M18.5 27h14" fill="none" stroke="#bd9a4b" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <span class="brand-type">ATELIER<small>ART · GALLERY · STUDIO</small></span>
+      </a>
+      <p>Made for the love of art.<br>Built with a love for making.</p>
+      <a class="back-top" href="#home">BACK TO TOP ↑</a>
+    </div>
+
+
+    <div class="footer-bottom"><span>© <span id="year">2026</span> ATELIER — ART GALLERY & CREATIVE MARKETPLACE</span><span>DESIGNED WITH INTENTION · MADE TO GROW</span></div>
+  </footer>
+</body>
+</html>
